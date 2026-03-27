@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmovi</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #000;
+        }
+        th {
+            background-color: #D1D1D1;
+            text-align: left;
+        }
+        td img {
+            width: 160px;
+            height: 90px;
+            display: block;
+            margin: 0 auto; /* centriranje slike */
+        }
+        td:last-child, td:last-child * {
+            font-weight: bold;
+        }
+        tr.total-row {
+            background-color: #F2F2F2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Filmovi</h2>
+
+    <table>
+        <tr>
+            <th>Slika</th>
+            <th>Naslov filma</th>
+            <th>Godina</th>
+            <th>Režiser</th>
+        </tr>
+
+        <tr>
+            <td><img src="slike/inception.png" alt="Inception"></td>
+            <td><a href="https://www.imdb.com/title/tt1375666/" target="_blank">Inception</a></td>
+            <td>2010</td>
+            <td>Christopher Nolan</td>
+        </tr>
+
+        <tr>
+            <td><img src="slike/interstellar.png" alt="Interstellar"></td>
+            <td><a href="https://www.imdb.com/title/tt0816692/" target="_blank">Interstellar</a></td>
+            <td>2014</td>
+            <td>Christopher Nolan</td>
+        </tr>
+
+        <tr>
+            <td><img src="slike/matrix.png" alt="Matrix"></td>
+            <td><a href="https://www.imdb.com/title/tt0133093/" target="_blank">The Matrix</a></td>
+            <td>1999</td>
+            <td>Lana & Lilly Wachowski</td>
+        </tr>
+
+        <tr>
+            <td><img src="slike/avatar.png" alt="Avatar"></td>
+            <td><a href="https://www.imdb.com/title/tt0499549/" target="_blank">Avatar</a></td>
+            <td>2009</td>
+            <td>James Cameron</td>
+        </tr>
+
+        <tr class="total-row">
+            <td colspan="3" style="text-align: left;"><strong>Ukupno</strong></td>
+            <td><strong>4</strong></td>
+        </tr>
+    </table>
+
+</body>
+</html>
