@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* ── ZAGLAVLJE ── */
+#zaglavlje {
+    height: 130px;
+    background-color: #003366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gumbi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#gumbi button {
+    margin: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: white;
+    color: #003366;
+    border: 2px solid white;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#gumbi button:hover {
+    background-color: #003366;
+    color: white;
+    border: 2px solid white;
+}
+
+#sredisnji {
+    padding: 20px;
+    margin-bottom: 80px; /* prostor za fixed footer */
+    min-height: calc(100vh - 130px - 65px);
+}
+
+#kvadrat {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border: 1px solid black;
+    margin: 20px 20px 0 20px;
+}
+
+#info-kvadrat {
+    margin: 8px 20px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#klizac {
+    display: block;
+    margin: 20px 20px 0 20px;
+    width: 300px;
+    cursor: pointer;
+}
+
+#podnozje {
+    height: 65px;
+    background-color: #003366;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    font-size: 1rem;
+}

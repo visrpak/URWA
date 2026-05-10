@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vježba 9</title>
+    <meta name="author" content="Ime Prezime">
+    <link rel="stylesheet" href="stilovi.css">
+</head>
+<body>
+
+    <header id="zaglavlje">
+        <div id="gumbi">
+            <button onclick="prikaziDatum()">Datum</button>
+            <button onclick="toggleKvadrat()">Kvadrat</button>
+            <button onclick="toggleKlizac()">Klizač</button>
+        </div>
+    </header>
+
+    <main id="sredisnji">
+        <div id="kvadrat" hidden></div>
+        <div id="info-kvadrat"></div>
+
+        <input type="range" id="klizac" min="20" max="200" value="20" hidden oninput="promijeniVelicinu(this.value)">
+    </main>
+
+    <footer id="podnozje">
+        <span id="datum-prikaz"></span>
+    </footer>
+
+    <script src="skripta.js"></script>
+</body>
+</html>
